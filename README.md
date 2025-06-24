@@ -68,3 +68,4 @@ if (enhanced_fp?.[25] && enhanced_fp?.[1]?.value && enhanced_fp?.[18]?.value) {
 
 ## Credits
 - [@tylerdevx](https://github.com/tylerdevx/) for the vm dump
+- [@Fr0st3h](https://github.com/Fr0st3h/BDALogger) for the bda logger hosted on my site
