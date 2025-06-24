@@ -61,6 +61,8 @@ if (enhanced_fp?.[25] && enhanced_fp?.[1]?.value && enhanced_fp?.[18]?.value) {
 
 ## Updated values
 - `navigator_permissions_hash` which was previously renamed in 3.5.0, has been reverted to its original name
+- `bda` -> `c`, again this is for the /gt2/ request
+- `data[blob]` used to not be set at all in the payload when there was no blob, now if there is no blob the value in tha payload is set to `data[blob]: "undefined"`
 
 ## Known site-keys on 4.0.5
 - 3C5073B0-3106-423D-8D6B-81FE82CF5C2C
