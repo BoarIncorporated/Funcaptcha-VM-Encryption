@@ -23,7 +23,7 @@ return [0, limit];
 return window.arkl.cbid
 ```
 
-There are also some new mechanisms to edit the bda values dynamically, for example you can see that for example `screen_pixel_depth` which is typically `24` on chrome is now `72`, which is `24 * 3`
+There are also some new mechanisms to edit the bda values dynamically, for example you can see that `screen_pixel_depth` which is typically `24` on chrome is now `72`, which is `24 * 3`
 this is caused by code that looks something like this:
 
 ```javascript
