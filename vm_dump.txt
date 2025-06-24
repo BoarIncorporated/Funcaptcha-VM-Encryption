@@ -1,0 +1,872 @@
+   0 => DEFINE_FUNC ddb5b
+   1 => PUSH_REF window
+   2 => PUSH_STR "navigation"
+   3 => GET_PROP_CHAIN(depth=1)
+   4 => IF_FALSE GOTO L0
+   5 => PUSH_REF window
+   6 => PUSH_STR "navigation"
+   7 => PUSH_STR "entries"
+   8 => GET_PROP_CHAIN(depth=2)
+   9 => CALL_STACK(0)
+  10 => STORE => bf460
+  11 => PUSH_REF bf460
+  12 => PUSH_STR "length"
+  13 => GET_PROP_CHAIN(depth=1)
+  14 => JUMP_TO_FUNC_END
+  15 => GOTO L1
+  16 => LABEL L0
+  17 => LABEL L1
+  18 => PUSH null
+  19 => JUMP_TO_FUNC_END
+  20 => RETURN_TO ddb5b
+  21 => STORE => e1c7e
+  22 => STORE => e1c7e
+  23 => DEFINE_FUNC c4642
+  24 => PUSH_REF window
+  25 => PUSH_STR "performance"
+  26 => GET_PROP_CHAIN(depth=1)
+  27 => STORE => e0842
+  28 => PUSH_REF e0842
+  29 => UNARY_OP !
+  30 => IF_FALSE GOTO L2
+  31 => PUSH 1
+  32 => PUSH null
+  33 => MAKE_ARRAY(2)
+  34 => JUMP_TO_FUNC_END
+  35 => GOTO L3
+  36 => LABEL L2
+  37 => LABEL L3
+  38 => PUSH_REF e0842
+  39 => STORE => e3843
+  40 => PUSH_REF memory
+  41 => UNARY_OP !
+  42 => IF_FALSE GOTO L4
+  43 => PUSH 2
+  44 => PUSH null
+  45 => MAKE_ARRAY(2)
+  46 => JUMP_TO_FUNC_END
+  47 => GOTO L5
+  48 => LABEL L4
+  49 => LABEL L5
+  50 => PUSH_REF memory
+  51 => STORE => e3843
+  52 => PUSH_REF jsHeapSizeLimit
+  53 => UNARY_OP !
+  54 => IF_FALSE GOTO L6
+  55 => PUSH 3
+  56 => PUSH null
+  57 => MAKE_ARRAY(2)
+  58 => JUMP_TO_FUNC_END
+  59 => GOTO L7
+  60 => LABEL L6
+  61 => LABEL L7
+  62 => PUSH 0
+  63 => PUSH_REF jsHeapSizeLimit
+  64 => MAKE_ARRAY(2)
+  65 => JUMP_TO_FUNC_END
+  66 => RETURN_TO c4642
+  67 => STORE => bedaa
+  68 => STORE => bedaa
+  69 => DEFINE_FUNC e11fe
+  70 => BIND f1560 = POP()
+  71 => PUSH_REF f1560
+  72 => PUSH 4
+  73 => GET_PROP_CHAIN(depth=1)
+  74 => UNARY_OP !
+  75 => IF (||) GOTO L10
+  76 => PUSH_REF f1560
+  77 => PUSH 4
+  78 => PUSH_STR "value"
+  79 => GET_PROP_CHAIN(depth=2)
+  80 => UNARY_OP !
+  81 => BIN_LOGIC ||
+  82 => LABEL L10
+  83 => IF_FALSE GOTO L8
+  84 => JUMP_TO_FUNC_END
+  85 => GOTO L9
+  86 => LABEL L8
+  87 => LABEL L9
+  88 => PUSH_REF f1560
+  89 => PUSH 4
+  90 => GET_PROP_CHAIN(depth=1)
+  91 => STORE => bf740
+  92 => CALL_FUNC ddb5b(0 args)
+  93 => STORE => e1c3d
+  94 => CALL_FUNC c4642(0 args)
+  95 => STORE => d42a6
+  96 => PUSH {}
+  97 => PUSH "vsadsa"
+  98 => ASSIGN key = "key"
+  99 => PUSH_REF e1c3d
+ 100 => ASSIGN key = "value"
+ 101 => PUSH_REF bf740
+ 102 => PUSH_STR "value"
+ 103 => PUSH_STR "push"
+ 104 => GET_PROP_CHAIN(depth=2)
+ 105 => CALL_STACK(1)
+ 106 => POP
+ 107 => PUSH {}
+ 108 => PUSH "basfas"
+ 109 => ASSIGN key = "key"
+ 110 => PUSH_REF d42a6
+ 111 => ASSIGN key = "value"
+ 112 => PUSH_REF bf740
+ 113 => PUSH_STR "value"
+ 114 => PUSH_STR "push"
+ 115 => GET_PROP_CHAIN(depth=2)
+ 116 => CALL_STACK(1)
+ 117 => POP
+ 118 => PUSH {}
+ 119 => PUSH "lfasdgs"
+ 120 => ASSIGN key = "key"
+ 121 => PUSH_REF window
+ 122 => PUSH_STR "arkl"
+ 123 => PUSH_STR "cbid"
+ 124 => GET_PROP_CHAIN(depth=2)
+ 125 => ASSIGN key = "value"
+ 126 => PUSH_REF bf740
+ 127 => PUSH_STR "value"
+ 128 => PUSH_STR "push"
+ 129 => GET_PROP_CHAIN(depth=2)
+ 130 => CALL_STACK(1)
+ 131 => POP
+ 132 => PUSH_REF bf740
+ 133 => PUSH_STR "value"
+ 134 => PUSH 25
+ 135 => GET_PROP_CHAIN(depth=2)
+ 136 => STORE => f549d
+ 137 => PUSH_REF bf740
+ 138 => PUSH_STR "value"
+ 139 => PUSH 26
+ 140 => GET_PROP_CHAIN(depth=2)
+ 141 => STORE => d2b37
+ 142 => PUSH_REF bf740
+ 143 => PUSH_STR "value"
+ 144 => PUSH 1
+ 145 => GET_PROP_CHAIN(depth=2)
+ 146 => STORE => e654f
+ 147 => PUSH_REF bf740
+ 148 => PUSH_STR "value"
+ 149 => PUSH 18
+ 150 => GET_PROP_CHAIN(depth=2)
+ 151 => STORE => ab23e
+ 152 => PUSH_REF f549d
+ 153 => IF (&&) GOTO L14
+ 154 => PUSH_REF e654f
+ 155 => BIN_LOGIC &&
+ 156 => LABEL L14
+ 157 => IF (&&) GOTO L13
+ 158 => PUSH_REF ab23e
+ 159 => BIN_LOGIC &&
+ 160 => LABEL L13
+ 161 => IF_FALSE GOTO L11
+ 162 => PUSH_REF e654f
+ 163 => PUSH_STR "value"
+ 164 => GET_PROP_CHAIN(depth=1)
+ 165 => IF (&&) GOTO L19
+ 166 => PUSH_REF e654f
+ 167 => PUSH_STR "value"
+ 168 => PUSH_STR "length"
+ 169 => GET_PROP_CHAIN(depth=2)
+ 170 => PUSH 12
+ 171 => BINARY_OP >
+ 172 => BIN_LOGIC &&
+ 173 => LABEL L19
+ 174 => IF (&&) GOTO L18
+ 175 => PUSH_REF ab23e
+ 176 => PUSH_STR "value"
+ 177 => GET_PROP_CHAIN(depth=1)
+ 178 => BIN_LOGIC &&
+ 179 => LABEL L18
+ 180 => IF (&&) GOTO L17
+ 181 => PUSH_REF ab23e
+ 182 => PUSH_STR "value"
+ 183 => PUSH_STR "length"
+ 184 => GET_PROP_CHAIN(depth=2)
+ 185 => PUSH 12
+ 186 => BINARY_OP >
+ 187 => BIN_LOGIC &&
+ 188 => LABEL L17
+ 189 => IF_FALSE GOTO L15
+ 190 => PUSH {}
+ 191 => PUSH_REF f549d
+ 192 => PUSH_STR "key"
+ 193 => GET_PROP_CHAIN(depth=1)
+ 194 => ASSIGN key = "key"
+ 195 => PUSH 0
+ 196 => PUSH 3
+ 197 => PUSH_REF e654f
+ 198 => PUSH_STR "value"
+ 199 => PUSH_STR "slice"
+ 200 => GET_PROP_CHAIN(depth=2)
+ 201 => CALL_STACK(2)
+ 202 => PUSH 0
+ 203 => PUSH 3
+ 204 => PUSH_REF ab23e
+ 205 => PUSH_STR "value"
+ 206 => PUSH_STR "slice"
+ 207 => GET_PROP_CHAIN(depth=2)
+ 208 => CALL_STACK(2)
+ 209 => BINARY_OP +
+ 210 => ASSIGN key = "value"
+ 211 => PUSH_REF bf740
+ 212 => PUSH_STR "value"
+ 213 => PUSH 25
+ 214 => GET_PROP_CHAIN(depth=2)
+ 215 => ASSIGN_DEEP_PROP
+ 216 => DELETE_FUNC undefined
+ 217 => GOTO L16
+ 218 => LABEL L15
+ 219 => PUSH {}
+ 220 => PUSH_REF f549d
+ 221 => PUSH_STR "key"
+ 222 => GET_PROP_CHAIN(depth=1)
+ 223 => ASSIGN key = "key"
+ 224 => PUSH "abcdef"
+ 225 => ASSIGN key = "value"
+ 226 => PUSH_REF bf740
+ 227 => PUSH_STR "value"
+ 228 => PUSH 25
+ 229 => GET_PROP_CHAIN(depth=2)
+ 230 => ASSIGN_DEEP_PROP
+ 231 => DELETE_FUNC undefined
+ 232 => LABEL L16
+ 233 => GOTO L12
+ 234 => LABEL L11
+ 235 => LABEL L12
+ 236 => PUSH_REF d2b37
+ 237 => IF_FALSE GOTO L20
+ 238 => PUSH_REF d2b37
+ 239 => PUSH_STR "value"
+ 240 => GET_PROP_CHAIN(depth=1)
+ 241 => IF_FALSE GOTO L22
+ 242 => PUSH {}
+ 243 => PUSH_REF d2b37
+ 244 => PUSH_STR "key"
+ 245 => GET_PROP_CHAIN(depth=1)
+ 246 => ASSIGN key = "key"
+ 247 => PUSH_REF d2b37
+ 248 => PUSH_STR "value"
+ 249 => GET_PROP_CHAIN(depth=1)
+ 250 => PUSH 3
+ 251 => BINARY_OP *
+ 252 => ASSIGN key = "value"
+ 253 => PUSH_REF bf740
+ 254 => PUSH_STR "value"
+ 255 => PUSH 26
+ 256 => GET_PROP_CHAIN(depth=2)
+ 257 => ASSIGN_DEEP_PROP
+ 258 => DELETE_FUNC undefined
+ 259 => GOTO L23
+ 260 => LABEL L22
+ 261 => LABEL L23
+ 262 => GOTO L21
+ 263 => LABEL L20
+ 264 => LABEL L21
+ 265 => RETURN_TO e11fe
+ 266 => STORE => b8241
+ 267 => STORE => b8241
+ 268 => DEFINE_FUNC f3d5d
+ 269 => BIND fb097 = POP()
+ 270 => BIND ccd05 = POP()
+ 271 => BIND f1560 = POP()
+ 272 => DEFINE_FUNC cd43f
+ 273 => PUSH {}
+ 274 => PUSH "AES-GCM"
+ 275 => ASSIGN key = "name"
+ 276 => PUSH 256
+ 277 => ASSIGN key = "length"
+ 278 => PUSH true
+ 279 => PUSH "encrypt"
+ 280 => MAKE_ARRAY(1)
+ 281 => PUSH_REF fb097
+ 282 => PUSH_STR "subtle"
+ 283 => PUSH_STR "generateKey"
+ 284 => GET_PROP_CHAIN(depth=2)
+ 285 => CALL_STACK(3)
+ 286 => JUMP_TO_FUNC_END
+ 287 => RETURN_TO cd43f
+ 288 => DEFINE_FUNC c864e
+ 289 => PUSH 12
+ 290 => CALL_NATIVE(1, Uint8Array)
+ 291 => PUSH_REF fb097
+ 292 => PUSH_STR "getRandomValues"
+ 293 => GET_PROP_CHAIN(depth=1)
+ 294 => CALL_STACK(1)
+ 295 => JUMP_TO_FUNC_END
+ 296 => RETURN_TO c864e
+ 297 => DEFINE_FUNC d7c35
+ 298 => BIND e7a65 = POP()
+ 299 => BIND ecc1e = POP()
+ 300 => BIND ffc31 = POP()
+ 301 => PUSH_REF e7a65
+ 302 => PUSH_REF window
+ 303 => PUSH_STR "arkl"
+ 304 => PUSH_STR "aagesg"
+ 305 => GET_PROP_CHAIN(depth=2)
+ 306 => CALL_STACK(1)
+ 307 => STORE => d797b
+ 308 => PUSH {}
+ 309 => PUSH "AES-GCM"
+ 310 => ASSIGN key = "name"
+ 311 => PUSH_REF ecc1e
+ 312 => ASSIGN key = "iv"
+ 313 => PUSH_REF ffc31
+ 314 => PUSH_REF d797b
+ 315 => PUSH_REF fb097
+ 316 => PUSH_STR "subtle"
+ 317 => PUSH_STR "encrypt"
+ 318 => GET_PROP_CHAIN(depth=2)
+ 319 => CALL_STACK(3)
+ 320 => JUMP_TO_FUNC_END
+ 321 => RETURN_TO d7c35
+ 322 => DEFINE_FUNC fe6b3
+ 323 => BIND deda4 = POP()
+ 324 => PUSH_REF deda4
+ 325 => CALL_NATIVE(1, Uint8Array)
+ 326 => STORE => e45e9
+ 327 => PUSH 16
+ 328 => STORE => b5930
+ 329 => PUSH 0
+ 330 => PUSH_REF e45e9
+ 331 => PUSH_STR "length"
+ 332 => GET_PROP_CHAIN(depth=1)
+ 333 => PUSH_REF b5930
+ 334 => BINARY_OP -
+ 335 => PUSH_REF e45e9
+ 336 => PUSH_STR "subarray"
+ 337 => GET_PROP_CHAIN(depth=1)
+ 338 => CALL_STACK(2)
+ 339 => CALL_NATIVE(1, Uint8Array)
+ 340 => STORE => f9b41
+ 341 => PUSH_REF e45e9
+ 342 => PUSH_STR "length"
+ 343 => GET_PROP_CHAIN(depth=1)
+ 344 => PUSH_REF b5930
+ 345 => BINARY_OP -
+ 346 => PUSH_REF e45e9
+ 347 => PUSH_STR "subarray"
+ 348 => GET_PROP_CHAIN(depth=1)
+ 349 => CALL_STACK(1)
+ 350 => CALL_NATIVE(1, Uint8Array)
+ 351 => STORE => e75b2
+ 352 => PUSH {}
+ 353 => PUSH_REF f9b41
+ 354 => PUSH_STR "buffer"
+ 355 => GET_PROP_CHAIN(depth=1)
+ 356 => ASSIGN key = "ciphertextBuffer"
+ 357 => PUSH_REF e75b2
+ 358 => PUSH_STR "buffer"
+ 359 => GET_PROP_CHAIN(depth=1)
+ 360 => ASSIGN key = "tagBuffer"
+ 361 => JUMP_TO_FUNC_END
+ 362 => RETURN_TO fe6b3
+ 363 => DEFINE_FUNC d1dca
+ 364 => BIND ae033 = POP()
+ 365 => BIND ffc31 = POP()
+ 366 => PUSH "raw"
+ 367 => PUSH_REF ffc31
+ 368 => PUSH_REF fb097
+ 369 => PUSH_STR "subtle"
+ 370 => PUSH_STR "exportKey"
+ 371 => GET_PROP_CHAIN(depth=2)
+ 372 => CALL_STACK(2)
+ 373 => AWAIT
+ 374 => STORE => bf1a4
+ 375 => PUSH_REF ae033
+ 376 => PUSH_REF window
+ 377 => PUSH_STR "arkl"
+ 378 => PUSH_STR "basdga"
+ 379 => GET_PROP_CHAIN(depth=2)
+ 380 => CALL_STACK(1)
+ 381 => STORE => d005a
+ 382 => PUSH "spki"
+ 383 => PUSH_REF d005a
+ 384 => PUSH {}
+ 385 => PUSH "RSA-OAEP"
+ 386 => ASSIGN key = "name"
+ 387 => PUSH "SHA-256"
+ 388 => ASSIGN key = "hash"
+ 389 => PUSH false
+ 390 => PUSH "encrypt"
+ 391 => MAKE_ARRAY(1)
+ 392 => PUSH_REF fb097
+ 393 => PUSH_STR "subtle"
+ 394 => PUSH_STR "importKey"
+ 395 => GET_PROP_CHAIN(depth=2)
+ 396 => CALL_STACK(5)
+ 397 => AWAIT
+ 398 => STORE => e860e
+ 399 => PUSH {}
+ 400 => PUSH "RSA-OAEP"
+ 401 => ASSIGN key = "name"
+ 402 => PUSH_REF e860e
+ 403 => PUSH_REF bf1a4
+ 404 => PUSH_REF fb097
+ 405 => PUSH_STR "subtle"
+ 406 => PUSH_STR "encrypt"
+ 407 => GET_PROP_CHAIN(depth=2)
+ 408 => CALL_STACK(3)
+ 409 => JUMP_TO_FUNC_END
+ 410 => RETURN_TO d1dca
+ 411 => PUSH_REF f1560
+ 412 => UNARY_OP !
+ 413 => IF_FALSE GOTO L24
+ 414 => PUSH null
+ 415 => JUMP_TO_FUNC_END
+ 416 => GOTO L25
+ 417 => LABEL L24
+ 418 => LABEL L25
+ 419 => PUSH_REF ccd05
+ 420 => UNARY_OP !
+ 421 => IF_FALSE GOTO L26
+ 422 => PUSH null
+ 423 => JUMP_TO_FUNC_END
+ 424 => GOTO L27
+ 425 => LABEL L26
+ 426 => LABEL L27
+ 427 => PUSH_REF f1560
+ 428 => PUSH_REF JSON
+ 429 => PUSH_STR "stringify"
+ 430 => GET_PROP_CHAIN(depth=1)
+ 431 => CALL_STACK(1)
+ 432 => STORE => c06a1
+ 433 => CALL_FUNC cd43f(0 args)
+ 434 => AWAIT
+ 435 => STORE => ed4ba
+ 436 => CALL_FUNC c864e(0 args)
+ 437 => STORE => a6305
+ 438 => PUSH_REF ed4ba
+ 439 => PUSH_REF a6305
+ 440 => PUSH_REF c06a1
+ 441 => CALL_FUNC d7c35(3 args)
+ 442 => AWAIT
+ 443 => STORE => aa6f8
+ 444 => PUSH_REF aa6f8
+ 445 => CALL_FUNC fe6b3(1 args)
+ 446 => STORE => f0285
+ 447 => PUSH_REF f0285
+ 448 => PUSH_STR "ciphertextBuffer"
+ 449 => GET_PROP_CHAIN(depth=1)
+ 450 => STORE => b478f
+ 451 => PUSH_REF f0285
+ 452 => PUSH_STR "tagBuffer"
+ 453 => GET_PROP_CHAIN(depth=1)
+ 454 => STORE => a8e60
+ 455 => PUSH_REF ed4ba
+ 456 => PUSH_REF ccd05
+ 457 => CALL_FUNC d1dca(2 args)
+ 458 => AWAIT
+ 459 => STORE => a64ca
+ 460 => PUSH_REF b478f
+ 461 => PUSH_REF window
+ 462 => PUSH_STR "arkl"
+ 463 => PUSH_STR "caasgs"
+ 464 => GET_PROP_CHAIN(depth=2)
+ 465 => CALL_STACK(1)
+ 466 => STORE => f6375
+ 467 => PUSH_REF a8e60
+ 468 => PUSH_REF window
+ 469 => PUSH_STR "arkl"
+ 470 => PUSH_STR "caasgs"
+ 471 => GET_PROP_CHAIN(depth=2)
+ 472 => CALL_STACK(1)
+ 473 => STORE => de0af
+ 474 => PUSH_REF a6305
+ 475 => PUSH_STR "buffer"
+ 476 => GET_PROP_CHAIN(depth=1)
+ 477 => PUSH_REF window
+ 478 => PUSH_STR "arkl"
+ 479 => PUSH_STR "caasgs"
+ 480 => GET_PROP_CHAIN(depth=2)
+ 481 => CALL_STACK(1)
+ 482 => STORE => e6816
+ 483 => PUSH_REF a64ca
+ 484 => PUSH_REF window
+ 485 => PUSH_STR "arkl"
+ 486 => PUSH_STR "caasgs"
+ 487 => GET_PROP_CHAIN(depth=2)
+ 488 => CALL_STACK(1)
+ 489 => STORE => f1464
+ 490 => PUSH_REF e6816
+ 491 => PUSH_REF de0af
+ 492 => BINARY_OP +
+ 493 => PUSH_REF f1464
+ 494 => BINARY_OP +
+ 495 => PUSH_REF f6375
+ 496 => BINARY_OP +
+ 497 => JUMP_TO_FUNC_END
+ 498 => RETURN_TO f3d5d
+ 499 => STORE => a6004
+ 500 => STORE => a6004
+ 501 => DEFINE_FUNC de8b7
+ 502 => BIND fb097 = POP()
+ 503 => BIND ccd05 = POP()
+ 504 => BIND f1560 = POP()
+ 505 => DEFINE_FUNC dc6f9
+ 506 => BIND a2858 = POP()
+ 507 => MAKE_ARRAY(0)
+ 508 => STORE => d5597
+ 509 => PUSH 0
+ 510 => STORE => e6b7d
+ 511 => LABEL L28
+ 512 => PUSH_REF e6b7d
+ 513 => PUSH_REF a2858
+ 514 => PUSH_STR "length"
+ 515 => GET_PROP_CHAIN(depth=1)
+ 516 => BINARY_OP <
+ 517 => IF_FALSE GOTO L29
+ 518 => PUSH_REF a2858
+ 519 => PUSH_VAR i
+ 520 => GET_PROP_CHAIN(depth=1)
+ 521 => PUSH_REF d5597
+ 522 => PUSH_VAR i
+ 523 => GET_PROP_CHAIN(depth=1)
+ 524 => ASSIGN_DEEP_PROP
+ 525 => DELETE_FUNC undefined
+ 526 => PUSH_REF e6b7d
+ 527 => PUSH 1
+ 528 => BINARY_OP +
+ 529 => STORE => e6b7d
+ 530 => DELETE_FUNC i
+ 531 => GOTO L28
+ 532 => LABEL L29
+ 533 => PUSH_REF d5597
+ 534 => PUSH_REF fb097
+ 535 => PUSH_STR "initPrng"
+ 536 => GET_PROP_CHAIN(depth=1)
+ 537 => CALL_STACK(1)
+ 538 => POP
+ 539 => RETURN_TO dc6f9
+ 540 => PUSH 48
+ 541 => CALL_NATIVE(1, Uint8Array)
+ 542 => PUSH_REF window
+ 543 => PUSH_STR "msCrypto"
+ 544 => PUSH_STR "getRandomValues"
+ 545 => GET_PROP_CHAIN(depth=2)
+ 546 => CALL_STACK(1)
+ 547 => STORE => c3a8d
+ 548 => PUSH_REF c3a8d
+ 549 => CALL_FUNC dc6f9(1 args)
+ 550 => POP
+ 551 => PUSH_REF f1560
+ 552 => PUSH_REF ccd05
+ 553 => PUSH_REF fb097
+ 554 => CALL_FUNC f3d5d(3 args)
+ 555 => AWAIT
+ 556 => JUMP_TO_FUNC_END
+ 557 => RETURN_TO de8b7
+ 558 => STORE => fcbeb
+ 559 => STORE => fcbeb
+ 560 => DEFINE_FUNC db153
+ 561 => BIND e5eec = POP()
+ 562 => BIND ccc39 = POP()
+ 563 => PUSH_REF ccc39
+ 564 => PUSH_REF e5eec
+ 565 => PUSH_STR "util"
+ 566 => PUSH_STR "decode64"
+ 567 => GET_PROP_CHAIN(depth=2)
+ 568 => CALL_STACK(1)
+ 569 => STORE => e4de3
+ 570 => PUSH_REF e4de3
+ 571 => PUSH_REF e5eec
+ 572 => PUSH_STR "asn1"
+ 573 => PUSH_STR "fromDer"
+ 574 => GET_PROP_CHAIN(depth=2)
+ 575 => CALL_STACK(1)
+ 576 => STORE => b7b18
+ 577 => PUSH_REF b7b18
+ 578 => PUSH_REF e5eec
+ 579 => PUSH_STR "pki"
+ 580 => PUSH_STR "publicKeyFromAsn1"
+ 581 => GET_PROP_CHAIN(depth=2)
+ 582 => CALL_STACK(1)
+ 583 => JUMP_TO_FUNC_END
+ 584 => RETURN_TO db153
+ 585 => DEFINE_FUNC c0d8d
+ 586 => BIND e5eec = POP()
+ 587 => PUSH 32
+ 588 => PUSH_REF e5eec
+ 589 => PUSH_STR "random"
+ 590 => PUSH_STR "getBytesSync"
+ 591 => GET_PROP_CHAIN(depth=2)
+ 592 => CALL_STACK(1)
+ 593 => JUMP_TO_FUNC_END
+ 594 => RETURN_TO c0d8d
+ 595 => DEFINE_FUNC e6fa1
+ 596 => BIND e5eec = POP()
+ 597 => PUSH 12
+ 598 => PUSH_REF e5eec
+ 599 => PUSH_STR "random"
+ 600 => PUSH_STR "getBytesSync"
+ 601 => GET_PROP_CHAIN(depth=2)
+ 602 => CALL_STACK(1)
+ 603 => JUMP_TO_FUNC_END
+ 604 => RETURN_TO e6fa1
+ 605 => DEFINE_FUNC d0779
+ 606 => BIND e5eec = POP()
+ 607 => BIND c06a1 = POP()
+ 608 => BIND a6305 = POP()
+ 609 => BIND ed4ba = POP()
+ 610 => PUSH "AES-GCM"
+ 611 => PUSH_REF ed4ba
+ 612 => PUSH_REF e5eec
+ 613 => PUSH_STR "cipher"
+ 614 => PUSH_STR "createCipher"
+ 615 => GET_PROP_CHAIN(depth=2)
+ 616 => CALL_STACK(2)
+ 617 => STORE => b328c
+ 618 => PUSH {}
+ 619 => PUSH_REF a6305
+ 620 => ASSIGN key = "iv"
+ 621 => PUSH_REF b328c
+ 622 => PUSH_STR "start"
+ 623 => GET_PROP_CHAIN(depth=1)
+ 624 => CALL_STACK(1)
+ 625 => POP
+ 626 => PUSH_REF c06a1
+ 627 => PUSH "utf8"
+ 628 => PUSH_REF e5eec
+ 629 => PUSH_STR "util"
+ 630 => PUSH_STR "createBuffer"
+ 631 => GET_PROP_CHAIN(depth=2)
+ 632 => CALL_STACK(2)
+ 633 => PUSH_REF b328c
+ 634 => PUSH_STR "update"
+ 635 => GET_PROP_CHAIN(depth=1)
+ 636 => CALL_STACK(1)
+ 637 => POP
+ 638 => PUSH_REF b328c
+ 639 => PUSH_STR "finish"
+ 640 => GET_PROP_CHAIN(depth=1)
+ 641 => CALL_STACK(0)
+ 642 => STORE => f55e7
+ 643 => PUSH_REF f55e7
+ 644 => UNARY_OP !
+ 645 => IF_FALSE GOTO L30
+ 646 => PUSH null
+ 647 => JUMP_TO_FUNC_END
+ 648 => GOTO L31
+ 649 => LABEL L30
+ 650 => LABEL L31
+ 651 => PUSH_REF b328c
+ 652 => JUMP_TO_FUNC_END
+ 653 => RETURN_TO d0779
+ 654 => DEFINE_FUNC c3fdc
+ 655 => BIND e5eec = POP()
+ 656 => BIND ccd05 = POP()
+ 657 => BIND ed4ba = POP()
+ 658 => PUSH_REF ccd05
+ 659 => PUSH_REF e5eec
+ 660 => CALL_FUNC db153(2 args)
+ 661 => STORE => e860e
+ 662 => PUSH_REF e5eec
+ 663 => PUSH_STR "md"
+ 664 => PUSH_STR "sha256"
+ 665 => PUSH_STR "create"
+ 666 => GET_PROP_CHAIN(depth=3)
+ 667 => CALL_STACK(0)
+ 668 => STORE => f5b0f
+ 669 => PUSH_REF ed4ba
+ 670 => PUSH "RSA-OAEP"
+ 671 => PUSH {}
+ 672 => PUSH_REF f5b0f
+ 673 => ASSIGN key = "md"
+ 674 => PUSH_REF e860e
+ 675 => PUSH_STR "encrypt"
+ 676 => GET_PROP_CHAIN(depth=1)
+ 677 => CALL_STACK(3)
+ 678 => STORE => b6b7f
+ 679 => PUSH_REF b6b7f
+ 680 => JUMP_TO_FUNC_END
+ 681 => RETURN_TO c3fdc
+ 682 => DEFINE_FUNC ea017
+ 683 => BIND e5eec = POP()
+ 684 => BIND ccd05 = POP()
+ 685 => BIND f1560 = POP()
+ 686 => PUSH_REF f1560
+ 687 => UNARY_OP !
+ 688 => IF_FALSE GOTO L32
+ 689 => PUSH null
+ 690 => JUMP_TO_FUNC_END
+ 691 => GOTO L33
+ 692 => LABEL L32
+ 693 => LABEL L33
+ 694 => PUSH_REF e5eec
+ 695 => UNARY_OP !
+ 696 => IF_FALSE GOTO L34
+ 697 => PUSH null
+ 698 => JUMP_TO_FUNC_END
+ 699 => GOTO L35
+ 700 => LABEL L34
+ 701 => LABEL L35
+ 702 => PUSH_REF ccd05
+ 703 => UNARY_OP !
+ 704 => IF_FALSE GOTO L36
+ 705 => PUSH null
+ 706 => JUMP_TO_FUNC_END
+ 707 => GOTO L37
+ 708 => LABEL L36
+ 709 => LABEL L37
+ 710 => PUSH_REF e5eec
+ 711 => CALL_FUNC c0d8d(1 args)
+ 712 => STORE => c9269
+ 713 => PUSH_REF e5eec
+ 714 => CALL_FUNC e6fa1(1 args)
+ 715 => STORE => a184f
+ 716 => PUSH_REF c9269
+ 717 => PUSH_REF a184f
+ 718 => PUSH_REF f1560
+ 719 => PUSH_REF JSON
+ 720 => PUSH_STR "stringify"
+ 721 => GET_PROP_CHAIN(depth=1)
+ 722 => CALL_STACK(1)
+ 723 => PUSH_REF e5eec
+ 724 => CALL_FUNC d0779(4 args)
+ 725 => STORE => b328c
+ 726 => PUSH_REF b328c
+ 727 => UNARY_OP !
+ 728 => IF_FALSE GOTO L38
+ 729 => PUSH null
+ 730 => JUMP_TO_FUNC_END
+ 731 => GOTO L39
+ 732 => LABEL L38
+ 733 => LABEL L39
+ 734 => PUSH_REF b328c
+ 735 => PUSH_STR "output"
+ 736 => PUSH_STR "getBytes"
+ 737 => GET_PROP_CHAIN(depth=2)
+ 738 => CALL_STACK(0)
+ 739 => STORE => f9b41
+ 740 => PUSH_REF b328c
+ 741 => PUSH_STR "mode"
+ 742 => PUSH_STR "tag"
+ 743 => PUSH_STR "getBytes"
+ 744 => GET_PROP_CHAIN(depth=3)
+ 745 => CALL_STACK(0)
+ 746 => STORE => e75b2
+ 747 => PUSH_REF c9269
+ 748 => PUSH_REF ccd05
+ 749 => PUSH_REF e5eec
+ 750 => CALL_FUNC c3fdc(3 args)
+ 751 => STORE => b6b7f
+ 752 => PUSH_REF f9b41
+ 753 => PUSH_REF e5eec
+ 754 => PUSH_STR "util"
+ 755 => PUSH_STR "encode64"
+ 756 => GET_PROP_CHAIN(depth=2)
+ 757 => CALL_STACK(1)
+ 758 => STORE => f6375
+ 759 => PUSH_REF e75b2
+ 760 => PUSH_REF e5eec
+ 761 => PUSH_STR "util"
+ 762 => PUSH_STR "encode64"
+ 763 => GET_PROP_CHAIN(depth=2)
+ 764 => CALL_STACK(1)
+ 765 => STORE => de0af
+ 766 => PUSH_REF a184f
+ 767 => PUSH_REF e5eec
+ 768 => PUSH_STR "util"
+ 769 => PUSH_STR "encode64"
+ 770 => GET_PROP_CHAIN(depth=2)
+ 771 => CALL_STACK(1)
+ 772 => STORE => e6816
+ 773 => PUSH_REF b6b7f
+ 774 => PUSH_REF e5eec
+ 775 => PUSH_STR "util"
+ 776 => PUSH_STR "encode64"
+ 777 => GET_PROP_CHAIN(depth=2)
+ 778 => CALL_STACK(1)
+ 779 => STORE => f1464
+ 780 => PUSH_REF e6816
+ 781 => PUSH_REF de0af
+ 782 => BINARY_OP +
+ 783 => PUSH_REF f1464
+ 784 => BINARY_OP +
+ 785 => PUSH_REF f6375
+ 786 => BINARY_OP +
+ 787 => JUMP_TO_FUNC_END
+ 788 => RETURN_TO ea017
+ 789 => STORE => b3cd7
+ 790 => STORE => b3cd7
+ 791 => DEFINE_FUNC d95b7
+ 792 => PUSH NaN
+ 793 => STORE => c13e4
+ 794 => PUSH_REF window
+ 795 => PUSH_STR "arkl"
+ 796 => PUSH_STR "pl"
+ 797 => GET_PROP_CHAIN(depth=2)
+ 798 => STORE => f1560
+ 799 => PUSH "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzjl0t5bLoeEA1f3uTVUEfEfOoSH3hCfFEu6dFvrxeZML84tv2d5r3x5KEhc7eJfFUGHyA/W5cAS8gGKzIrA433mWP5m4gZUwMIL8wSuusqNMcohIVObwWn8imhS+Bt0yH8q0q/Zz1WyACxbkrGhQqzllqc0gHbZkjNfQC2h5Si4jIYJXBF5X6asM07WJmeZynXTCdrJJUnzDZNERmbpkmsvkpoBrLnZ2XMY1bR9o+X4PFIBDpF+LdYXPuvAby/iIVfFzlVh/pX1n9ZIdSgFplM5+2TL+rlmPiC26ekxIsUBv/yHInwPMr6xpe0XolOvPu8D3xzpIIVX9BAJvyU/H/QIDAQAB"
+ 800 => STORE => ccd05
+ 801 => PUSH_REF f1560
+ 802 => CALL_FUNC e11fe(1 args)
+ 803 => POP
+ 804 => PUSH_REF window
+ 805 => PUSH_STR "arkl"
+ 806 => PUSH_STR "cryptoType"
+ 807 => GET_PROP_CHAIN(depth=2)
+ 808 => PUSH "crypto"
+ 809 => BINARY_OP ===
+ 810 => IF_FALSE GOTO L40
+ 811 => PUSH_REF f1560
+ 812 => PUSH_REF ccd05
+ 813 => PUSH_REF window
+ 814 => PUSH_STR "arkl"
+ 815 => PUSH_STR "crypto"
+ 816 => GET_PROP_CHAIN(depth=2)
+ 817 => CALL_FUNC f3d5d(3 args)
+ 818 => AWAIT
+ 819 => STORE => c13e4
+ 820 => DELETE_FUNC result
+ 821 => GOTO L41
+ 822 => LABEL L40
+ 823 => PUSH_REF window
+ 824 => PUSH_STR "arkl"
+ 825 => PUSH_STR "cryptoType"
+ 826 => GET_PROP_CHAIN(depth=2)
+ 827 => PUSH "msr"
+ 828 => BINARY_OP ===
+ 829 => IF_FALSE GOTO L42
+ 830 => PUSH_REF f1560
+ 831 => PUSH_REF ccd05
+ 832 => PUSH_REF window
+ 833 => PUSH_STR "arkl"
+ 834 => PUSH_STR "msrCrypto"
+ 835 => GET_PROP_CHAIN(depth=2)
+ 836 => CALL_FUNC de8b7(3 args)
+ 837 => STORE => c13e4
+ 838 => DELETE_FUNC result
+ 839 => GOTO L43
+ 840 => LABEL L42
+ 841 => PUSH_REF window
+ 842 => PUSH_STR "arkl"
+ 843 => PUSH_STR "cryptoType"
+ 844 => GET_PROP_CHAIN(depth=2)
+ 845 => PUSH "forge"
+ 846 => BINARY_OP ===
+ 847 => IF_FALSE GOTO L44
+ 848 => PUSH_REF f1560
+ 849 => PUSH_REF ccd05
+ 850 => PUSH_REF window
+ 851 => PUSH_STR "arkl"
+ 852 => PUSH_STR "forge"
+ 853 => GET_PROP_CHAIN(depth=2)
+ 854 => CALL_FUNC ea017(3 args)
+ 855 => STORE => c13e4
+ 856 => DELETE_FUNC result
+ 857 => GOTO L45
+ 858 => LABEL L44
+ 859 => LABEL L45
+ 860 => LABEL L43
+ 861 => LABEL L41
+ 862 => PUSH_REF c13e4
+ 863 => PUSH_REF window
+ 864 => PUSH_STR "arkl"
+ 865 => PUSH_STR "rs"
+ 866 => GET_PROP_CHAIN(depth=2)
+ 867 => ASSIGN_DEEP_PROP
+ 868 => DELETE_FUNC undefined
+ 869 => RETURN_TO d95b7
+ 870 => CALL_FUNC d95b7(0 args)
+ 871 => POP
