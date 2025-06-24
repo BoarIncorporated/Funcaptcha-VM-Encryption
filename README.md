@@ -56,6 +56,12 @@ if (enhanced_fp?.[25] && enhanced_fp?.[1]?.value && enhanced_fp?.[18]?.value) {
 }
 ```
 
+## New values
+- `ark-build-id`: new header, you can find the value its set to in api.js, this header is only used in the /gt2/ request
+
+## Updated values
+- `navigator_permissions_hash` which was previously renamed in 3.5.0, has been reverted to its original name
+
 ## Known site-keys on 4.0.5
 - 3C5073B0-3106-423D-8D6B-81FE82CF5C2C
 - C07CAFBC-F76F-4DFD-ABFA-A6B78ADC1F29
