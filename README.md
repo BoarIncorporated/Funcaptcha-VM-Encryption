@@ -1,5 +1,5 @@
 You need to AES encrypt the payload first just like you did for previous version and then rsa encrypt it
-
+### **Currently as BDA is encrypted using RSA, it's not possible to decrypt it afterwards, you can obviously see it using breakpoints but it's pretty annoying, so I made an endpoint on my site that allows you to view your 4.0.5 bda without any hassle, you can find it [here](https://fingerprinting.my/my-fingerprint)**
 
 ## New BDA values
 - vsadsa
@@ -22,7 +22,40 @@ return [0, limit];
 ```javascript
 return window.arkl.cbid
 ```
-  
+
+There are also some new mechanisms to edit the bda values dynamically, for example you can see that for example `screen_pixel_depth` which is typically `24` on chrome is now `72`, which is `24 * 3`
+this is caused by code that looks something like this:
+
+```javascript
+let enhanced_fp = bda[4]?.value;
+
+if (enhanced_fp[26]?.value) {
+    enhanced_fp[26] = {
+        key: enhanced_fp[26].key,
+        value: enhanced_fp[26].value * 3
+    };
+}
+```
+
+this also happens for `network_info_rtt_type` on something like this:
+
+```javascript
+let enhanced_fp = bda[4]?.value;
+
+if (enhanced_fp?.[25] && enhanced_fp?.[1]?.value && enhanced_fp?.[18]?.value) {
+    const webgl_extensions_hash = enhanced_fp[1].value;
+    const webgl_hash_webgl = enhanced_fp[18].value;
+    enhanced_fp[25].value = {
+        key: enhanced_fp[25].key,
+        value:
+            typeof webgl_extensions_hash === "string" && webgl_extensions_hash.length > 12 &&
+            typeof webgl_hash_webgl === "string" && webgl_hash_webgl.length > 12
+                ? webgl_extensions_hash.slice(0, 3) + webgl_hash_webgl.slice(0, 3)
+                : "abcdef"
+    };
+}
+```
+
 ## Known site-keys on 4.0.5
 - 3C5073B0-3106-423D-8D6B-81FE82CF5C2C
 - C07CAFBC-F76F-4DFD-ABFA-A6B78ADC1F29
