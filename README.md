@@ -65,14 +65,14 @@ if (enhanced_fp?.[25] && enhanced_fp?.[1]?.value && enhanced_fp?.[18]?.value) {
 - `data[blob]` used to not be set at all in the payload when there was no blob, now if there is no blob the value in tha payload is set to `data[blob]: "undefined"`
 
 ## Known site-keys on 4.0.5
-- 3C5073B0-3106-423D-8D6B-81FE82CF5C2C
-- C07CAFBC-F76F-4DFD-ABFA-A6B78ADC1F29
-- 2F4F0B28-BC94-4271-8AD7-A51662E3C91C
-- 7D76E2A2-89F4-4CD7-AB0E-416683BF595D
-- EE844FC3-499D-4A4D-A643-D7400F0FD4DE
-- 73C53A42-FEEA-4097-8B08-F9F3E8B143CE
-- 717C7D7F-8ED2-4587-AF41-E7E34907A6FB
-- E3EFEFBF-8DE4-42ED-9E7F-92F35B1FD3CF
+- 3C5073B0-3106-423D-8D6B-81FE82CF5C2C -> Wells Fargo
+- C07CAFBC-F76F-4DFD-ABFA-A6B78ADC1F29 -> help.x.com
+- 2F4F0B28-BC94-4271-8AD7-A51662E3C91C -> X login
+- 7D76E2A2-89F4-4CD7-AB0E-416683BF595D -> Payoneer dev
+- EE844FC3-499D-4A4D-A643-D7400F0FD4DE -> Payoneer prod
+- 73C53A42-FEEA-4097-8B08-F9F3E8B143CE -> Bumble
+- 717C7D7F-8ED2-4587-AF41-E7E34907A6FB -> Bumble phone
+- E3EFEFBF-8DE4-42ED-9E7F-92F35B1FD3CF -> Demo key
 
 ## Credits
 - [@tylerdevx](https://github.com/tylerdevx/) for the vm dump
