@@ -1,5 +1,7 @@
 You need to AES encrypt the payload first just like you did for previous version and then rsa encrypt it
 ### **Currently it's not possible to decrypt the BDA afterwards, you can obviously see it using breakpoints but it's pretty annoying, so I made an endpoint on my site that allows you to view your 4.0.5 BDA without any hassle, you can find it [here](https://fingerprinting.my/my-fingerprint)**
+> [!NOTE]
+> You will still have to set breakpoints to get site-specifc presets
 
 ## New BDA values
 - vsadsa
