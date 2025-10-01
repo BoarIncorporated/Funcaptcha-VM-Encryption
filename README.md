@@ -67,6 +67,8 @@ if (enhanced_fp?.[25] && enhanced_fp?.[1]?.value && enhanced_fp?.[18]?.value) {
 - `data[blob]` used to not be set at all in the payload when there was no blob, now if there is no blob the value in tha payload is set to `data[blob]: "undefined"`
 
 ## Known site-keys on 4.x.x
+> [!NOTE]
+> Due to private deals done on telegram, pubkey for 4.0.9 will not be published, if you're interested in purchasing specific version keys you can contact me on [telegram](https://t.me/dinglenut18)
 
 | Version | Site Key | Site Name | RSA Key |
 |---------|----------|-----------|----------|
