@@ -1,5 +1,5 @@
 You need to AES encrypt the payload first just like you did for previous version and then rsa encrypt it
-### **Currently it's not possible to decrypt the BDA afterwards, you can obviously see it using breakpoints but it's pretty annoying, ~~so I made an endpoint on my site that allows you to view your 4.0.5 BDA without any hassle, you can find it [here](https://csolver.com)~~**
+### **Currently it's not possible to decrypt the BDA afterwards, you can obviously see it using breakpoints but it's pretty annoying
 > [!NOTE]
 > You will still have to set breakpoints to get site-specifc presets
 
@@ -119,6 +119,3 @@ ALL SITES ABOVE VERSION 4 ARE NOW ON 4.0.9
 | 4.0.9 | `DE0B0BB7-1EE4-4D70-1853-31B835D4506B` | UNKNOWN SITE | `MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAshc0eZTiMq5FpHuWtSs1gLvSmgxxExfAdWWS5XWYE7jqJWOtkIJYErJJGBkF3GO/Xkf64myMCZE2WEMGPOmv0Am65ZdqcQKeq4FC8iEizb4JLlD3t+4/wClQJp8w/YX9AII5W8u4JegYX9YpzUfojvBgTD3K+vXJy2T2+UGSn4c1pdFWLPiL29FvPUvvUiniFcr68H57IIGQzFqqlfxWaPhDBXRI0rY17UYa6CzHbDdgNttG2RS/403Y5PjKzWK/1bBAr6fle96hcUrlV8pZY4kCSJmSjYdq5YumRQGbJ7QjsmgUBPaLI4d6jeKhmsop8rS8Evs67irLJUruUJWGBQIDAQAB` |
 
 **Total keys:** 45
-
-## Credits
-- [@tylerdevx](https://github.com/tylerdevx/) for the vm dump
